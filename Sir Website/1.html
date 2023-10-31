@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="red">
+            <div class="cir" id="red"> </div>
+            <div class="name">Gaurav Malik</div>
+            <div class="prof">Full Stack Devloper at FreeCharge Ltd</div>
+        </div>
+        <div class="white">
+            <div class="first">
+
+                <div class="fir">All</div>
+                <div class="sec" id="call">1:1 Call</div>
+                <div class="third">Priority Dm</div>
+            </div>
+            <div class="second">
+                <div class="left">
+                    <div class="up">
+                        <div class="txt">
+                            <span id="redd"> 1:1 Call</span>
+                        </div>
+                        <div class="img">
+                            <img src="arrow-right-square-fill.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="btw"><b> Mock Interview 1:1 </b></div>
+                    <div class="bottom">
+                        <hr>
+                        <span style="padding-left: 5%;">60 min meeting</span>
+                        <span class="dollar"><s>$1200</s><b> $1000 </b></span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="up1">
+                        <div class="txt1"><span>Priority Dm</span></div>
+                        <div class="img1">
+                            <img src="arrow-right-square-fill.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="btw1"><b> Have a question ? </b></div>
+                    <div class="bottom1">
+                        <hr>
+                        <span style="padding-left: 5%;">replies in 3 day</span>
+                        <span class="dollar"><b>$0 +</b></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="three">
+                About Me
+            </div>
+            <div class="lndin"><img src="th (1).jpg" alt=""></div>
+            <div class="thirdlst" id="nice">◆ Passionate about crafting elegant and innovative solutions, I am a
+                dedicated Full
+                Stack Developer with a strong background in Java, Spring Boot, and Angular, along with hands-on
+                experience in AWS services.</div>
+            <div class="secondlst">◆ Over 2.5 years of professional journey, I have thrived on transforming ideas
+                into
+                reality through well-architected applications. Embracing continuous learning, I eagerly stay at the
+                forefront of technological advancements, ensuring top-notch performance and user experiences.</div>
+            <div class="last">◆ Collaborative and driven, I thrive in dynamic environments, where my adaptability
+                and
+                problem-solving skills empower teams to achieve excellence.</div>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    //  document.querySelector('.thirdlst').style.color = "red"
+    flag = 0;
+    zyc = 0;
+
+
+
+    document.querySelector('.fir').addEventListener('click', function () {
+        document.querySelector('.right').style.display = "block"
+        if (flag = 1) {
+            document.querySelector('.left').style.display = "block";
+            flag = 0;
+        }
+    })
+
+    document.querySelector('#call').addEventListener('click', function () {
+
+        document.querySelector('.right').style.display = "none"
+        zyc = 1;
+
+        if (flag = 1) {
+            document.querySelector('.left').style.display = "block";
+            flag = 0;
+        }
+
+
+
+    })
+
+    document.querySelector('.third').addEventListener('click', function () {
+        document.querySelector('.left').style.display = "none";
+        flag = 1;
+        if (zyc = 1) {
+            document.querySelector('.right').style.display = "block";
+            zyc = 0;
+        }
+    })
+    document.querySelector('.left').addEventListener('click',function(){
+        location.href='2.html';
+    })
+    document.querySelector('.left').addEventListener('onmouseover',function(){
+        
+    })
+    
+</script>
+
+</html>

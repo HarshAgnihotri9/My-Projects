@@ -1,0 +1,458 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.red {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(243, 101, 125);
+    position: fixed;
+
+
+}
+
+.white {
+
+    width: 70%;
+    height: 100%;
+    margin-left: 28%;
+
+
+}
+
+.main {
+    display: flex;
+
+}
+
+.cir {
+    margin-left: 30px;
+    margin-top: 50px;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.name {
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: xx-large;
+}
+
+.prof {
+    font-size: large;
+    margin-top: 10px;
+    margin-left: 50px;
+
+}
+
+.first {
+    display: flex;
+    flex-flow: wrap;
+    padding-top: 100px;
+    padding-left: 15vh;
+
+    gap: 50px;
+}
+
+.fir {
+    /* border: 2px solid black; */
+    padding: 8px;
+    background-color: rgb(218, 211, 211);
+    border-radius: 7px;
+}
+
+.sec {
+    padding: 8px;
+    background-color: rgb(215, 214, 214);
+    border-radius: 7px;
+
+}
+
+.third {
+    padding: 8px;
+    border-radius: 7px;
+    background-color: rgb(214, 209, 209);
+}
+
+.fir:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.sec:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.third:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.second {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 100px;
+    gap: 50px;
+
+}
+
+.dollar {
+    float: right;
+    margin-right: 10px;
+}
+
+.right {
+    outline: 0.2px solid rgb(159, 172, 185);
+
+    width: 45%;
+    height: 300px;
+    border-radius: 20px;
+    transition:  transform 2s;
+}
+
+.left {
+    /* border: 2px solid black;  */
+    width: 45%;
+    height: 300px;
+    border-radius: 20px;
+    outline: 0.2px solid rgb(159, 172, 185);
+    transition:  transform 2s;
+    
+
+}
+
+.up {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt span {
+    background-color: rgb(200, 188, 188);
+    border-radius: 5px;
+    display: block;
+    padding: 9px;
+    margin-left: 20px;
+
+}
+
+.txt span:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+.txt1 span:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: right;
+
+    margin-right: 20px;
+}
+
+.btw {
+    font-size: x-large;
+    padding-left: 15px;
+    margin-top: 40px;
+}
+
+.bottom {
+    margin-top: 120px;
+
+}
+
+.up1 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt1 span {
+    background-color: rgb(200, 188, 188);
+    border-radius: 5px;
+    display: block;
+    padding: 9px;
+    margin-left: 20px;
+
+}
+
+.img1 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    float: right;
+
+    margin-right: 20px;
+}
+
+.btw1 {
+    font-size: x-large;
+    padding-left: 15px;
+    margin-top: 40px;
+}
+
+.bottom1 {
+    margin-top: 120px;
+}
+
+.svg img {
+    width: 20%;
+    height: 20%;
+}
+
+.three {
+    font-size: xx-large;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-left: 100px;
+
+}
+
+.lndin img {
+    width: 10%;
+    height: 10%;
+    display: block;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.thirdlst {
+    font-size: large;
+    margin-left: 100px;
+    margin-top: 20px;
+
+}
+
+.secondlst {
+    font-size: large;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.last {
+    font-size: large;
+    margin-left: 100px;
+    margin-top: 30px;
+
+}
+
+@media only screen and (max-device-width: 1009px) {
+    .red {}
+
+    .cir {
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .white {
+        margin-left: 22%;
+    }
+}
+
+@media only screen and (max-device-width: 895px) {
+    .left {
+        width: 90%;
+
+    }
+
+    .right {
+        width: 90%;
+
+    }
+
+    .white {
+        margin-left: 25%;
+    }
+    .red{
+        position:absolute
+    }
+}
+
+@media only screen and (max-device-width: 805px) {
+    .red {
+        width: 100%;
+        height: 38%;
+
+    }
+
+    .name {
+        margin-top: 0%;
+        margin-left: 5%;
+
+    }
+
+    .prof {
+        margin-left: 5%;
+    }
+
+    .cir {
+        margin-top: 3%;
+        width: 150px;
+        height: 150px;
+    }
+
+    .white {
+        margin-top: 15rem;
+        margin-left: 0%;
+
+        width: 100%;
+    }
+
+    .left {
+        width: 90%;
+        padding-left: -10%;
+        margin-left: -10%;
+
+    }
+
+    .right {
+        width: 90%;
+        margin-left: -10%;
+
+    }
+
+    .first {
+        padding-left: 7%;
+    }
+
+    .second {
+        padding-left: 0%;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    .first {
+        padding-left: 9%;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+
+    .white {
+
+
+        width: 120%;
+    }
+
+    .left {
+        width: 110%;
+        margin-left: -20%;
+
+    }
+
+    .right {
+        width: 110%;
+        margin-left: -20%;
+
+    }
+
+}
+
+@media only screen and (max-device-width: 350px) {
+
+    .white {
+        margin-top: 11rem;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .left {
+        width: 140%;
+
+        margin-left: -38%;
+        height: max-content;
+
+    }
+
+    .right {
+        width: 140%;
+        margin-left: -38%;
+        height: max-content;
+    }
+
+    .name {
+        margin-top: 7px;
+        font-size: large;
+        font-weight: 900;
+
+    }
+
+    .prof {
+        font-size: medium;
+    }
+
+    .cir {
+        width: 100px;
+        height: 100px;
+    }
+
+    .red {
+        height: 30%;
+    }
+
+    .first {
+        flex-flow: nowrap;
+        gap: 10px;
+    }
+}
+
+
+@media only screen and (max-device-width: 233px) {
+    .white {
+        width: 100%;
+    }
+
+    .left {
+        width: 180%;
+
+        margin-left: -50%;
+        height: max-content;
+
+    }
+
+    .right {
+        width: 140%;
+        margin-left: -38%;
+        height: max-content;
+
+    }
+}
+
+@media only screen and (max-device-width: 250px) {
+
+    .left {
+        width: fit-content;
+        height: fit-content;
+        margin-left: auto;
+        margin-left: -80px;
+
+    }
+
+    .right {
+        width: fit-content;
+        height: fit-content;
+        margin-left: -80px;
+    }
+}
+.left:hover{
+    
+    transform: scale(1.1,1.1)
+    
+}
+.right:hover{
+    
+    transform: scale(1.1,1.1)
+    
+}
