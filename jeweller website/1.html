@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+<div class="main">
+    <div class="left">
+      <h4> The Vardhan Jewellers</h4>
+    </div>
+    <div class="right">
+           <ul class="ul">
+                <li id="view">Home</li>
+                <li id="view">About</li>
+                <li id="view">Contact Us</li>
+                <li id="view">More</li>
+                <img   class="click" src="sort.png" alt="" width="25px" height="25px" >
+            </ul>
+           
+        </div>
+</div>
+<div class="secondpage">
+  <div class="left1">
+    <img src="icons8-jewel-64 (1).png" alt="">
+    <div class="text">
+
+      <H2>VARDHAN <br> JEWELLERS </H2>
+      <p>Where Drems Become Reality</p>
+    </div>
+  </div>
+  <div class="right1">
+    <h2>GREAT THINGS <br>ARE COMING</h2>
+    <div class="btn"><button>Contact Us</button></div>
+    <div class="imagess">
+      <div class="img1" onmouseover="myfunction()" onmouseleave="myfunction1()"><img src="icons8-facebook-50.png" alt=""></div>
+      <div class="img2"onmouseover="myfunction3()" onmouseleave="myfunction4()"><img src="icons8-instagram-50.png" alt=""></div>
+      <div class="img3" onmouseover="myfunction5()" onmouseleave="myfunction6()"><img src="icons8-phone-50.png" alt=""></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="1.js"></script>
+<script>
+          function  myfunction(){
+           const imag=document.querySelector('.img1 img')
+             imag.src="fb.png"
+         }
+         function  myfunction1(){
+           const imag=document.querySelector('.img1 img')
+             imag.src="icons8-facebook-50.png"
+         }
+         function  myfunction3(){
+           const imag=document.querySelector('.img2 img')
+             imag.src="insta.png"
+         }
+         function  myfunction4(){
+           const imag=document.querySelector('.img2 img')
+             imag.src="icons8-instagram-50.png"
+         }
+         function  myfunction5(){
+           const imag=document.querySelector('.img3 img')
+             imag.src="phone.png"
+         }
+         function  myfunction6(){
+           const imag=document.querySelector('.img3 img')
+             imag.src="icons8-phone-50.png"
+         }
+if (screen.width ==842 ) {
+          ul.forEach(function(l){
+            l.style.display="none"
+            l.style.position="absolute"
+          })
+
+        }
+    document.querySelector('.click').addEventListener('click',function(e){
+        console.log(e);
+        let ul=document.querySelectorAll('li')
+        console.log(ul);
+        flag=0;
+        ul.forEach(function(l){
+          if(l.style.display==="none"){
+            l.style.display="block"
+          }
+          else{
+            l.style.display="none"
+          }
+        })
+        })
+        
+        // document.querySelector('.img1 img').addEventListener('click',function(){
+        //  const image=document.querySelector('.img1 img')
+          
+        //   image.src="sort.png"
+
+        // })
+        
+</script>
+</body>
+</html>
